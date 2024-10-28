@@ -1,0 +1,51 @@
+src/
+    
+    navigation/
+        FooterNavHome.js
+        MenuDesplegable.js
+    
+    components/
+        Button.js
+        Card.js
+        Header.js
+        Loader.js
+        Footer.js
+
+    screens/
+        Home.js
+        Perfil.js
+        Settings.js
+        
+        Entrenamientos.js
+        WorkoutPlans.js
+        Details.js
+        List.js
+        Nutrition.js
+        Progress.js
+        SleepTracker.js
+        FitnessArticles.js
+        PersonalRecords.js
+        Challenges.js
+        DietAndMealPlans.js
+            auth/
+                Login.js
+
+    services/
+        FirebaseConfig.js
+        ApiRest.js   
+
+    styles/
+        colors.js
+        typography.js
+        globalStyles.js 
+
+    utils/
+        formatDate.js
+        calculateBMI.js    
+        validation.js   
+
+    constants/
+        apiUrls.js
+        messages.js
+
+App.js

@@ -1,0 +1,6 @@
+Enlaces:
+https://www.youtube.com/watch?v=ONAVmsGW6-M
+https://docs.expo.dev/
+https://firebase.google.com/?hl=es-419
+https://javascript.info/
+https://dummyjson.com/docs/users
