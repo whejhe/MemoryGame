@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, StyleSheet, Pressable, Text } from 'react-native';
+import { View, StyleSheet, Pressable, Text } from 'react-native';
 
 const Menu = ({ onRestart }) => {
     return (

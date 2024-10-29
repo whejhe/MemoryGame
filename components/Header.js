@@ -1,11 +1,23 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { useState, useEffect} from 'react';
+import { View, Text, StyleSheet, Animated } from 'react-native';
 
 const Header = ({ attempts }) => {
+
+    const opacity = useState(new Animated.Value(0))[0];
+    const opacity2 = useState(new Animated.Value(0))[0];
+
+    useEffect(() => {
+        Animated.timing(opacity, {
+            toValue: 1,
+            duration: 2000,
+            useNativeDriver: true,
+        }).start();
+    }, []);
+
     return (
         <View style={styles.header}>
-            <Text style={styles.title}>Juego de Memoria</Text>
-            <Text style={styles.attempts}>Intentos: {attempts}</Text>
+            <Animated.Text style={[styles.title, { opacity }]}>Juego de Memoria</Animated.Text>
+            <Text style={[styles.attempts, { opacity2 }]}>Intentos: {attempts}</Text>
         </View>
     );
 };
