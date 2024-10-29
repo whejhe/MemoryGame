@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Alert } from 'react-native';
+import { StyleSheet, View, Alert, ImageBackground } from 'react-native';
 import Board from './components/Board';
 import Header from './components/Header';
 import Menu from './components/Menu';
@@ -49,7 +49,7 @@ const App = () => {
   const isGameOver = matchedCards.length === cards.length / 2;
 
   return (
-    <View style={styles.container}>
+    <ImageBackground source={require('./assets/puzzle.jpg')} style={styles.container}>
       <Header attempts={attempts} />
       <Board
         cards={cards}
@@ -59,7 +59,7 @@ const App = () => {
       />
       <Menu onRestart={startGame} />
       {isGameOver && Alert.alert('¡Juego terminado!', `Intentos: ${attempts}`, [{ text: 'Reiniciar', onPress: startGame }])}
-    </View>
+    </ImageBackground>
   );
 };
 

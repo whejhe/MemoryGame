@@ -18,9 +18,12 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 24,
         fontWeight: 'bold',
+        color: '#E37719',
     },
     attempts: {
         fontSize: 18,
+        fontWeight: 'bold',
+        color: '#E37719',
     },
 });
 
