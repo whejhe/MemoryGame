@@ -1,11 +1,11 @@
 import React from 'react';
-import { TouchableOpacity, View, StyleSheet } from 'react-native';
+import { Pressable, View, StyleSheet } from 'react-native';
 
 const Card = ({ color, isFlipped, onPress }) => {
     return (
-        <TouchableOpacity onPress={onPress} style={styles.card}>
+        <Pressable onPress={onPress} style={styles.card}>
             <View style={[styles.innerCard, isFlipped ? { backgroundColor: color } : { backgroundColor: 'gray' }]} />
-        </TouchableOpacity>
+        </Pressable>
     );
 };
 
@@ -14,6 +14,9 @@ const styles = StyleSheet.create({
         width: 80,
         height: 80,
         margin: 5,
+        borderRadius: 10,
+        borderColor: '#E37719',
+        borderWidth: 2,
     },
     innerCard: {
         flex: 1,

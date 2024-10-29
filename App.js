@@ -16,7 +16,7 @@ const App = () => {
   }, []);
 
   const startGame = () => {
-    const initialCards = shuffleCards(['red', 'blue', 'green', 'yellow']);
+    const initialCards = shuffleCards(['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'pink', 'cyan', 'black']);
     setCards(initialCards);
     setAttempts(0);
     setFlippedCards([]);
