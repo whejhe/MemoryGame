@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Pressable, View, StyleSheet, Animated } from 'react-native';
+import { Pressable, View, StyleSheet, Animated, Image } from 'react-native';
 
 const Card = ({ color, isFlipped, onPress }) => {
 

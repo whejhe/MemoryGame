@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Alert, ImageBackground } from 'react-native';
+import { StyleSheet, Alert, ImageBackground } from 'react-native';
 import Board from './components/Board';
 import Header from './components/Header';
 import Menu from './components/Menu';
